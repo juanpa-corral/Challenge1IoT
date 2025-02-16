@@ -25,7 +25,7 @@ Además, al mostrar información en tiempo real, el sistema facilita el monitore
 Este documento técnico describe el diseño, desarrollo, implementación y validación del prototipo del sistema IoT para el monitoreo de crecidas. La documentación se organiza de la siguiente manera:
 
 *    Sección 2: Solución propuesta. Se presentan las restricciones de diseño, la arquitectura del sistema (tanto en hardware como en software), el desarrollo teórico modular y los estándares utilizados en el diseño.
-*    Sección 3: Configuración experimental, resultados y análisis. Se describe el entrono de prueba, los resultados obtenidos y el análisis de los datos recopilados.
+*    Sección 3: Configuración experimental, resultados y análisis. Se describe el entorno de prueba, los resultados obtenidos y el análisis de los datos recopilados.
 *    Sección 4: Autoevaluación del protocolo de pruebas. Se evalúa la efectividad del protocolo de pruebas implementado y se propones posibles mejoras.
 *    Sección 5: Conclusiones, retos, trabajo futuro y referencias. Se resumen los principales logros del proyecto, los desafíos enfrentados durante su desarrollo, las oportunidades de mejora y las referencias bibliográficas utilizadas.
 *    Sección 6: Anexos. Se incluyen el código fuente, los esquematicos del sistema y otro material complementario.
