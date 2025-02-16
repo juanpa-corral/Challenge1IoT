@@ -76,12 +76,59 @@ Para construir el prototipo, se adoptó un enfoque modular, estructurando el sis
 
 Este tipo de diseño modular le permite a cada componente cumplir una función específic, mejorando la eficiencia y facilidad de mantenimineto del sistema.
 
-### Diagramas de UML
+### Diagrama de UML
 Revisar Diagramas en la parte de DiagramsUML
 
-### Esquematico de Hardware
+### Esquemático de Hardware
 
 ### Estándares de diseño de ingeniería aplicados
 Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usuarios que interactuan con el prototipo, como para las personas que reciben las alertas. Se busco que la informacion mostrada sea clara y concisa, y que las alertas sean percebtibles en diferentes entornos, como por ejemplo, si es de noche se escucha bien y se ve bien el LED, pero si es de día podria no verse mucho el LED entonces por eso se puso un zumbador.
 
+## 3.Configuración experimental, resultados y análisis
+### Descripción del entorno de prueba
+Las pruebas se llevaron a cabo en el laboratorio de electrónica de la Universidad de la Sabana, un ambiente interior controlado y libre de condiciones climáticas externas que pudieran afectar los resultados
 
+Para la realización de las pruebas, se utilizaron los siguientes equipos y materiales:
+*    Sensor ultrasónico HC-SR04
+*    Sensor de lluvia SunFounder
+*    Arduino Uno
+*    Jumpers
+*    Protoboard
+*    LED RGB
+*    Zumbador Activo
+*    Resistencias de 1k y 220 ohmnios
+*    Termo y coca (Utilizados para simular la lluvia)
+*    Recipiente de plástico (Utilizado para simular un río)
+
+Cabe recalcar que para estas pruebas, el estado seguro de rio esta para más de 8 centímetros de distancia del sensor, el estado de precaución esta entre 8 y 4 centímetros de distancia y por el ultimo el estado peligro es para menos 4 centímetros.
+
+### Procedimiento
+1.  Montaje del prototipo: Se conectaron todos los componentes (sensores, Arduino, LED RGB, zumbador) en la protoboard siguiendo el esquemático de hardware.
+2.  Carga del programa: Se cargo el programa Arduino a través del puerto USB y con la laptop.
+3.  Preparación del entorno: Se llenó el recipiente plástico con agua hasta un nivel inicial considerado seguro. Se midió la distancia entre el sensor ultrasónico y el nivel del agua, resgitrando el valro como punto de referencia.
+4.  Simulación de lluvia: Utilizando el termo y la coca, se vertió agua de forma gradual en el recipiente para simular de esta manera la lluvia y aumentar el nivel del agua. Se realizó el vertido del agua de forma continua pero controlada para así observar los cambios de estado del sistema.
+5.  Observación y registro: Se observó el comportamiento del LED RGB y el zumbador a medida que el nivel del agua se elevaba al igual que la LCD brindará la información correcta. Se regisrtro la distancia mediad por el sensor ultrasónico en el se producian las transiciones entre los estados (seguro, precaución y peligro).
+
+### Resultados
+| Nivel del Agua (distancia entre sensor y el agua) cm | Color del LED RGB | Zumbador             | Estado en pantalla LCD |
+| :------------------------------------------------- | :--------------- | :------------------- | :-------------------- |
+| 10                                                 | Verde            | No está sonando       | SEGURO                |
+| 9                                                  | Verde            | No está sonando       | SEGURO                |
+| 8                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
+| 7                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
+| 6                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
+| 5                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
+| 4                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
+| 3                                                  | Rojo             | Sonido constante      | Peligro               |
+| 2                                                  | Rojo             | Sonido constante      | Peligro               |
+
+### Análisis
+Los resultados obtenidos dfemuestran que el prototipo es capaz de dectectar cambio en el nivel del agua debido a las precipitaciones y alertar al usuario mediante señales visuales (LED RGB) y sonoras (zumbador).
+
+Específicamente, se comprobó que:
+
+*    El sistema identifica de manera correcta un estado de agua seguro (LED verde, zumbador inactivo) (+8cm).
+*    Ante un aumento simulado del nivel del agua, el sistema transiciona a un estado de precaución (LED azul, zumbador intermitente)(entre 8cm y 4cm).
+*    Al alcanzar un estado de peligro, el sistema emite una alerta clara (LED rojo, zumbador continuo) (-4cm).
+
+Es importante recalcar que después de diversas pruebas es recomnedable realizar las otras pruebas en condiciones de lluvia reales para validar el comportamiento del sistema. Pero en estas condiciones simuladas el sistema mostró ser capaz de detectar posibles crecidas de rios (nivel del agua en el recipiente).
