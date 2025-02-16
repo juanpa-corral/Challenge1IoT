@@ -132,3 +132,8 @@ Específicamente, se comprobó que:
 *    Al alcanzar un estado de peligro, el sistema emite una alerta clara (LED rojo, zumbador continuo) (-4cm).
 
 Es importante recalcar que después de diversas pruebas es recomnedable realizar las otras pruebas en condiciones de lluvia reales para validar el comportamiento del sistema. Pero en estas condiciones simuladas el sistema mostró ser capaz de detectar posibles crecidas de rios (nivel del agua en el recipiente).
+
+## Autoevaluación del protocolo de pruebas
+### Evaluación de la efectividad del protocolo
+* ¿El protocolo permitió validar correctamente el funcionamiento del prototipo? Sí, el protocolo de pruebas implementado permitió validar de manera efectiva el el funcionamiento básico del prototipo. Se realizaron pruebas en distintos escenarios de nivel de agua, permitiendo observar cómo el sistema respondía mediante el LED RGB, el zumbador y la pantalla LCD. Los resultados confirmaron que el prototipo dertecta cambios en el nivel del agua y alerta in sity de acuerdo a los umbrales establecidos.
+* ¿Se identificaron todos los posibles escenarios de uso? Aunque el protocolo permitió evaluar el funcionamiento general, no se consideraron todas las situaciones que podrían pasar en un entorno real. Por ejemplo, las pruebas se realizaron en un ambiente controlado y no se simularon condiciones climáticas extremas como lluvia intensa o ventiscas 
