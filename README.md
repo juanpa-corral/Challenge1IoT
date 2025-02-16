@@ -46,7 +46,7 @@ sensores con mayor alcance para monitorear ríos mas grandes o con variaciones d
 lo que restringe cuanta información al tiempo se pude evidenciar.
 
 #### Disponibilidad
-*    Solo uso de los sensores en aula de clase: Dado que los dispositivos y los sensores son parte de la Universidad,
+*    Solo uso de los sensores en aula de clase: Dado que los dispositivos y los sensores son parte de la universidad,
 estos solo estaban disponibles en el horario de clases o un horario permitido dentro de la universidad.
 
 #### De Espacio
@@ -55,7 +55,7 @@ estos solo estaban disponibles en el horario de clases o un horario permitido de
 
 #### Escalabilidad
 
-*    Expansión: Diseñado para monitorear un solo punto, pero con posibilidad de escalar a múltuples ubicaciones. Además
+*    Expansión: Diseñado para monitorear un solo punto, pero con posibilidad de escalar a múltiples ubicaciones. Además
 con posibilidad de incluir sensores mas precisos y con diferentes tecnologías para un rio de verdad.
 
 #### Tiempo
@@ -64,7 +64,7 @@ limitado, dado que los sensores solo estaban disponibles en horario de clase o h
 lo que requirió priorizar funcionalidades y el proceso de diseño y construcción.
 
 ### Arquitectura propuesta
-Revisar imagenes de Diagrama de bloques para hardware y software. Localizado en BlockDiagrams en el repositorio.
+Revisar imagenes de diagrama de bloques para hardware y software. Localizado en BlockDiagrams en el repositorio.
 
 ### Desarrollo teórico modular
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
@@ -77,7 +77,7 @@ Para construir el prototipo, se adoptó un enfoque modular, estructurando el sis
 Este tipo de diseño modular le permite a cada componente cumplir una función específic, mejorando la eficiencia y facilidad de mantenimineto del sistema.
 
 ### Diagrama de UML
-Revisar Diagramas en la parte de DiagramsUML
+Revisar diagramas en la parte de DiagramsUML
 
 ### Esquemático de Hardware
 
