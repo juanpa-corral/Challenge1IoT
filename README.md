@@ -6,7 +6,7 @@ Colombia es un país con una diversidad geográfica y sus patrones climáticos q
 
 Este proyecto se centra en desarrollar un prototipo de sistema IoT (Internet of Things) para monitorear en tiempo real el nivel del agua en los ríos y detectar posibles crecidas de manera temprana. Para ello, se emplea un Arduino uno como microcontrolador, junto a sensores ultrasónicos y de lluvia qe miden el nivel del agua y las precipitaciones. Cuando el sistema detecta un aumento peligroso en el nivel del río, activa un alerta visual (LED RGB) y auditiva (zumbador) para asi advertir a quienes se encuentren in situ. Además, la información de este nivel de agua se muestra en tiempo real en una pantalla (LCD 16x2), permitiendonos ver el nivel de distancia entre el sensor y el agua, y el estado en el que se encuentra el nivel del agua (SEGURO, PRECAUCIÓN Y PELIGRO).
 
-Este prototipo es un primer paso hacia la implementación de un istema de alerta temprana que podría ayudar a proteger a las comunidades y mitigar daños ocasionados por las inundaciones.
+Este prototipo es un primer paso hacia la implementación de un sistema de alerta temprana que podría ayudar a proteger a las comunidades y mitigar daños ocasionados por las inundaciones.
 
 ### Motivación
 Las crecidas de los rión en Colombia representan una amenza constante, con unas posibles consecuencias que pueden ser devastadoras. Además de posibles muertes, este tipo de desastres pueden ocasionar la destrucción de viviendas, dañar infraestructuras y afectar la economía de las comunidades.
