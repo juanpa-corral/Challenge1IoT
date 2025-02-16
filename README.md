@@ -42,7 +42,7 @@ diseño las cuales se presentan a continuación:
 *    Rango del sensor ultrasónico: El sensor HC-SR04 tiene un rango de medición de 2 cm a 400 cm, por lo
 que habia que tener en cuenta hasta que punto debiamos poner la alerta de peligro. En el futuro se podrias explorar
 sensores con mayor alcance para monitorear ríos mas grandes o con variaciones de niveles más sutiles.
-*    Limitaciones de la pantalla LCD: La pantalla LCD 16x2 solo puede mostrar una cantidad limitada de información,
+*    Limitaciones de la pantalla LCD: La pantalla LCD 16x2 solo puede mostrar una cantidad limitada de caracteres y/o símbolos,
 lo que restringe cuanta información al tiempo se pude evidenciar.
 
 #### Disponibilidad
