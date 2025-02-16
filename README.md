@@ -64,9 +64,9 @@ limitado, dado que los sensores solo estaban disponibles en horario de clase o h
 lo que requirió priorizar funcionalidades y el proceso de diseño y construcción.
 
 ## Arquitectura propuesta
-Revisar imagenes de Diagrama de bloques para hardware y software. Este en el repositorio como imágenes .png
+Revisar imagenes de Diagrama de bloques para hardware y software. Localizado en BlockDiagrams en el repositorio.
 
-##Desarrollo teórico modular
+## Desarrollo teórico modular
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
 
 *    Sensor de lluvia SunFounder: Se eligió un sensor capaz de dectectar la presencia de lluvia con la sensibilidad adecuada para activar el sistema de alerta en caso de ser necesario. El sensor funciona mediante la detección de cambios en la conductividad eléctrica cuando el agua hace contacto con las pistas conductoras.
