@@ -70,16 +70,18 @@ Revisar imagenes de diagrama de bloques para hardware y software. Localizado en 
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
 
 *    Sensor de lluvia SunFounder: Se eligió un sensor capaz de dectectar la presencia de lluvia con la sensibilidad adecuada para activar el sistema de alerta en caso de ser necesario. El sensor funciona mediante la detección de cambios en la conductividad eléctrica cuando el agua hace contacto con las pistas conductoras.
-*    Sensor ultrasónico: Se utilizo el modelo HC-SR04 debido a su precisión y rango de medición, lo que permite determinar el nivel del agua dentro de un rango relevante.
-*    Alarma(LED RGB y zumbador): Se diseño una alarma que combina señales visuales (LED RGB) y sonoras (zumbador) para alertar sobre la situación. La luz verde significa seguro, la luz azul más el sonido intermitente significa precaución y por último la luz roja más el sonido continuo representa peligro.
-*    Pantalla LCD 16x2: Se configuró una pantalla LCD 16x2 para mostrar de manera clara y concisa información en tiempo rela, incluyendo el nivel agua y el estado del sistema.
+*    Sensor ultrasónico: Se utilizó el modelo HC-SR04 debido a su precisión y rango de medición, lo que permite determinar el nivel del agua dentro de un rango relevante.
+*    Alarma(LED RGB y zumbador): Se diseñó una alarma que combina señales visuales (LED RGB) y sonoras (zumbador) para alertar sobre la situación. La luz verde significa seguro, la luz azul más el sonido intermitente significa precaución y por último la luz roja más el sonido continuo representa peligro.
+*    Pantalla LCD 16x2: Se configuró una pantalla LCD 16x2 para mostrar de manera clara y concisa información en tiempo real, incluyendo el nivel agua y el estado del sistema.
 
-Este tipo de diseño modular le permite a cada componente cumplir una función específic, mejorando la eficiencia y facilidad de mantenimineto del sistema.
+Este tipo de diseño modular le permite a cada componente cumplir una función específica, mejorando la eficiencia y facilidad de mantenimineto del sistema.
 
 ### Diagrama de UML
-Revisar diagramas en la parte de DiagramsUML
+Revisar diagramas en la parte de DiagramsUML.
 
 ### Esquemático de Hardware
+
+Revisar esquemático de Hardware en SchematicHardware en el repositorio.
 
 ### Estándares de diseño de ingeniería aplicados
 Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usuarios que interactuan con el prototipo, como para las personas que reciben las alertas. Se busco que la informacion mostrada sea clara y concisa, y que las alertas sean percebtibles en diferentes entornos, como por ejemplo, si es de noche se escucha bien y se ve bien el LED, pero si es de día podria no verse mucho el LED entonces por eso se puso un zumbador.
