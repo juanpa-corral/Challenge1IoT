@@ -84,7 +84,7 @@ Revisar diagramas en la parte de DiagramsUML.
 Revisar esquemático de Hardware en SchematicHardware en el repositorio.
 
 ### Estándares de diseño de ingeniería aplicados
-Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usuarios que interactuan con el prototipo, como para las personas que reciben las alertas. Se busco que la informacion mostrada sea clara y concisa, y que las alertas sean percebtibles en diferentes entornos, como por ejemplo, si es de noche se escucha bien y se ve bien el LED, pero si es de día podria no verse mucho el LED entonces por eso se puso un zumbador.
+Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usuarios que interactuan con el prototipo, como para las personas que reciben las alertas. Se buscó que la informacion mostrada sea clara y concisa, y que las alertas sean perceptibles en diferentes entornos, como por ejemplo, si es de noche es visible el LED, de lo contrario si es de día podría el LED no ser perceptible a la vista por lo tanto se implemento un zumbador como alerta sonora.
 
 ## 3.Configuración experimental, resultados y análisis
 ### Descripción del entorno de prueba
