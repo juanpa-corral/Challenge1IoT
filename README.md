@@ -138,4 +138,54 @@ Es importante recalcar que después de diversas pruebas es recomendable realizar
 ## Autoevaluación del protocolo de pruebas
 ### Evaluación de la efectividad del protocolo
 * ¿El protocolo permitió validar correctamente el funcionamiento del prototipo? Sí, el protocolo de pruebas implementado permitió validar de manera efectiva el funcionamiento básico del prototipo. Se realizaron pruebas en distintos escenarios de nivel de agua, permitiendo observar como el sistema respondía mediante el LED RGB, el zumbador y la pantalla LCD. Los resultados confirmaron que el prototipo dertecta cambios en el nivel del agua y alerta in situ de acuerdo a los umbrales establecidos.
-* ¿Se identificaron todos los posibles escenarios de uso? Aunque el protocolo permitió evaluar el funcionamiento general, no se consideraron todas las situaciones que podrían pasar en un entorno real. Por ejemplo, las pruebas se realizaron en un ambiente controlado y no se simularon condiciones climáticas extremas como lluvia intensa o ventiscas 
+* ¿Se identificaron todos los posibles escenarios de uso? Aunque el protocolo permitió evaluar el funcionamiento general, no se consideraron todas las situaciones que podrían pasar en un entorno real. Por ejemplo, las pruebas se realizaron en un ambiente controlado y no se simularon condiciones climáticas extremas como lluvia intensa o ventiscas, oleaje en el río entre otras, que podrían afectar el rendimiento del sensor de lluvio o la precisión del sensor ultrasónico. Tampoco se evaluarion escenarios deonde el nivel del agua desciende abruptamente o fluctúa de manera irregular.
+
+### Posibles mejoras al protocolo de pruebas
+Para tener una evaluación más completa del prototipo, sería recomendable incluir las siguientes pruebas:
+
+*    Pruebas en condiciones climáticas reales: Evaluar el desempeño del sistema en exteriores bajo lluvia real para verificar la fiabilidad del sensor de lluvia y la resistencia del prototipo a factores ambientales.
+*    Pruebas con distintas intesidades de lluvia: Utilizar un pluviómetro para medir la cantidad de la lluvia y analizar su impacto en la detección del nivel del agua.
+*    Pruebas con variaciones rápidas del nivel del agua: Simular situaciones en las que el agua sube o baja rapidamente para verificar que tan bien responde el sistema a variaciones repentinas.
+*    Pruebas de duración: Dejar el prototipo funcionando de manera continua por varios días para detectar posbiles fallos a largo plazo y evaluar su confiabilidad.
+
+## Conclusiones retos presentados durante el desarrollo del proyecto, trabajo futuro y referencias.
+
+### Conclusiones
+
+El desarrollo de este prototipo de sistema IoT para la detección temprana de crecidas de ríos permitió demostrar la viabilidad de utilizar sensores y Arduino en la prevención de desastres naturales. A través de la implementación del sensor ultrasónico y a el sensor de lluvia SunFpunder, fue posible monitorear en tiempo real en nivel del agua y generar alertas visuales y sonoras en caso de peligro.
+
+Entre los principales logros del proyecto se destacan:
+
+*  La correcta integración de los sensores con el Arduino uno, logrando un monitoreo eficiente.
+*  La implementación de una señal de alerta clara y perceptible mediante un LED RGB y un zumbador.
+*  La visualización en tiempo real de los datos en la pantalla LCD 16x2 proporcionando información accesible sobre el estado del sistema.
+*  Un diseño modular que permite futuras mejoras y adaptaciones para su implementación en escenario reales.
+
+Este proyecto es un primer paso en la dirección correcta hacia el desarrollo de sistemas de alerta temprana accesibles y económicos. La implementación de este tipo de tecnologías prodría reducir significativamente los impactos de las inundaciones, protegiendo tanto a la población como a la infraestructura.
+
+### Retos Presentados durante el desarrollo del proyecto
+
+A lo largo del desarrollo del prototipo, se enfrentaron diversos desafíos:
+
+*    Precisión del sensor ultrasónico
+*    Limitaciopnes en el tiempo de desarrollo
+*    Condiciones controladas
+*    Espacio reducido
+*    Interfaz limita
+
+### Trabajo futuro
+Este prototipo podría estar sentando varias bases para un sistema más avanzado que pude ser implementado en ríos reales. Alguna mejoras futuras podrían ser:
+
+*    Integración con redes IoT: Conectar el sistema a plataformas en la nube para permitir el monitoreo remoto y la notificación de alertas a través de aplicaciones móviles o SMS.
+*    Autonomía energética y sostenibilidad: Implementar un sistema completo de paneles solaras para garantizar el funcionamiento continuo del sistema en ubicaciones remotas.
+*    Resistencia a condiciones ambientales: Diseñar una carcasa empermeable y resistente para que de esta manera se puedan proteger los componentes electrónicos de condiciones adversas.
+*    Alcance: Hacer posible el despliegue de varias unidades en diferentes ubicaciones para obtener una red de monitoreo más sofisticada.
+
+### Referencias
+Arduino. (s.f.). Getting started with Arduino Uno. Arduino. https://www.arduino.cc/en/Guide/ArduinoUno
+Handson Technology. (s.f.). HC-SR04 Ultrasonic Sensor Datasheet. Handson Technology. https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf
+«Lesson 14 Rain Detection Module — SunFounder SunFounder_SensorKit_for_RPi2  documentation». Disponible en: https://docs.sunfounder.com/projects/sensorkit-v2-pi/en/latest/lesson_14.html
+J. E. Neira, «La empresa de acueducto reveló las razones por las que se están inundando las calles de Bogotá», Infobae, 15 de noviembre de 2024. Disponible en: https://www.infobae.com/colombia/2024/11/15/la-empresa-de-acueducto-revelo-las-razones-por-las-que-se-estan-inundando-las-calles-de-bogota/
+Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD). (2020). Sistemas de Alerta Temprana como elementos para la gestión del riesgo de desastres. Portal Gestión del Riesgo. https://portal.gestiondelriesgo.gov.co/Paginas/Noticias/2020/Sistemas-de-Alerta-Temprana-como-elementos-para-la-gestion-del-riesgo-de-desastres.aspx
+«Informe Niveles Río Cauca del 6 de abril de 2023 Hora 5:00 p.m | Ecopedia la enciclopedia ambiental del Valle del Cauca». Disponible en: https://portal-hidroclimatologico.cvc.gov.co/content/informe-niveles-rio-cauca-del-6-de-abril-de-2023-hora-500-pm
+«Precipitación: ¿Cuándo es poco y cuándo es mucho? | Eltiempo.es», Eltiempo.es, 6 de marzo de 2024. Disponible en: https://www.eltiempo.es/noticias/precipitacion-cuando-es-poco-y-cuando-es-mucho
