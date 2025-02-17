@@ -88,7 +88,7 @@ Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usua
 
 ## 3.Configuración experimental, resultados y análisis
 ### Descripción del entorno de prueba
-Las pruebas se llevaron a cabo en el laboratorio de electrónica de la Universidad de la Sabana, un ambiente interior controlado y libre de condiciones climáticas externas que pudieran afectar los resultados
+Las pruebas se llevaron a cabo en el laboratorio de electrónica de la Universidad de la Sabana, un ambiente interior controlado y libre de condiciones climáticas externas que pudieran afectar los resultados.
 
 Para la realización de las pruebas, se utilizaron los siguientes equipos y materiales:
 *    Sensor ultrasónico HC-SR04
@@ -99,17 +99,17 @@ Para la realización de las pruebas, se utilizaron los siguientes equipos y mate
 *    LED RGB
 *    Zumbador Activo
 *    Resistencias de 1k y 220 ohmnios
-*    Termo y coca (Utilizados para simular la lluvia)
-*    Recipiente de plástico (Utilizado para simular un río)
+*    Termo y envase (Utilizados para simular la lluvia)
+*    Recipiente plástico (Utilizado para simular un río)
 
-Cabe recalcar que para estas pruebas, el estado seguro de rio esta para más de 8 centímetros de distancia del sensor, el estado de precaución esta entre 8 y 4 centímetros de distancia y por el ultimo el estado peligro es para menos 4 centímetros.
+Cabe recalcar que para estas pruebas, el estado seguro de río está para más de 8 centímetros de distancia del sensor, el estado de precaución está entre 8 y 4 centímetros de distancia y por el último el estado de peligro es para menos de 4 centímetros.
 
 ### Procedimiento
 1.  Montaje del prototipo: Se conectaron todos los componentes (sensores, Arduino, LED RGB, zumbador) en la protoboard siguiendo el esquemático de hardware.
 2.  Carga del programa: Se cargo el programa Arduino a través del puerto USB y con la laptop.
-3.  Preparación del entorno: Se llenó el recipiente plástico con agua hasta un nivel inicial considerado seguro. Se midió la distancia entre el sensor ultrasónico y el nivel del agua, resgitrando el valro como punto de referencia.
-4.  Simulación de lluvia: Utilizando el termo y la coca, se vertió agua de forma gradual en el recipiente para simular de esta manera la lluvia y aumentar el nivel del agua. Se realizó el vertido del agua de forma continua pero controlada para así observar los cambios de estado del sistema.
-5.  Observación y registro: Se observó el comportamiento del LED RGB y el zumbador a medida que el nivel del agua se elevaba al igual que la LCD brindará la información correcta. Se regisrtro la distancia mediad por el sensor ultrasónico en el se producian las transiciones entre los estados (seguro, precaución y peligro).
+3.  Preparación del entorno: Se llenó el recipiente plástico con agua hasta un nivel inicial considerado seguro. Se midió la distancia entre el sensor ultrasónico y el nivel del agua, resgitrando el valor como punto de referencia.
+4.  Simulación de lluvia: Utilizando el termo y el envase, se vertió agua de forma gradual en el recipiente para simular de esta manera la lluvia y aumentar el nivel del agua, para así observar los cambios de estado del sistema.
+5.  Observación y registro: Se observó el comportamiento del LED RGB y el zumbador a medida que el nivel del agua se elevaba. Al mismo tiempo, la LCD brindó la información correcta. Se regisrtró la distancia medida por el sensor ultrasónico en el que se producian las transiciones entre los estados (seguro, precaución y peligro).
 
 ### Resultados
 | Nivel del Agua (distancia entre sensor y el agua) cm | Color del LED RGB | Zumbador             | Estado en pantalla LCD |
@@ -121,21 +121,21 @@ Cabe recalcar que para estas pruebas, el estado seguro de rio esta para más de 
 | 6                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
 | 5                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
 | 4                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 3                                                  | Rojo             | Sonido constante      | Peligro               |
-| 2                                                  | Rojo             | Sonido constante      | Peligro               |
+| 3                                                  | Rojo             | Sonido Constante      | PELIGRO               |
+| 2                                                  | Rojo             | Sonido Constante      | PELIGRO               |
 
 ### Análisis
-Los resultados obtenidos dfemuestran que el prototipo es capaz de dectectar cambio en el nivel del agua debido a las precipitaciones y alertar al usuario mediante señales visuales (LED RGB) y sonoras (zumbador).
+Los resultados obtenidos demuestran que el prototipo es capaz de dectectar cambios en el nivel del agua debido a las precipitaciones, y alertar al usuario mediante señales visuales (LED RGB) y sonoras (zumbador).
 
 Específicamente, se comprobó que:
 
 *    El sistema identifica de manera correcta un estado de agua seguro (LED verde, zumbador inactivo) (+8cm).
-*    Ante un aumento simulado del nivel del agua, el sistema transiciona a un estado de precaución (LED azul, zumbador intermitente)(entre 8cm y 4cm).
+*    Ante un aumento simulado del nivel del agua, el sistema transiciona a un estado de precaución (LED azul, zumbador intermitente) (entre 8cm y 4cm).
 *    Al alcanzar un estado de peligro, el sistema emite una alerta clara (LED rojo, zumbador continuo) (-4cm).
 
-Es importante recalcar que después de diversas pruebas es recomnedable realizar las otras pruebas en condiciones de lluvia reales para validar el comportamiento del sistema. Pero en estas condiciones simuladas el sistema mostró ser capaz de detectar posibles crecidas de rios (nivel del agua en el recipiente).
+Es importante recalcar que después de diversas pruebas es recomendable realizar las otras pruebas en condiciones de lluvia reales para validar el comportamiento del sistema. Sin embargo, en estas condiciones simuladas el sistema mostró ser capaz de detectar posibles crecidas de ríos (nivel del agua en el recipiente).
 
 ## Autoevaluación del protocolo de pruebas
 ### Evaluación de la efectividad del protocolo
-* ¿El protocolo permitió validar correctamente el funcionamiento del prototipo? Sí, el protocolo de pruebas implementado permitió validar de manera efectiva el el funcionamiento básico del prototipo. Se realizaron pruebas en distintos escenarios de nivel de agua, permitiendo observar cómo el sistema respondía mediante el LED RGB, el zumbador y la pantalla LCD. Los resultados confirmaron que el prototipo dertecta cambios en el nivel del agua y alerta in sity de acuerdo a los umbrales establecidos.
+* ¿El protocolo permitió validar correctamente el funcionamiento del prototipo? Sí, el protocolo de pruebas implementado permitió validar de manera efectiva el funcionamiento básico del prototipo. Se realizaron pruebas en distintos escenarios de nivel de agua, permitiendo observar como el sistema respondía mediante el LED RGB, el zumbador y la pantalla LCD. Los resultados confirmaron que el prototipo dertecta cambios en el nivel del agua y alerta in situ de acuerdo a los umbrales establecidos.
 * ¿Se identificaron todos los posibles escenarios de uso? Aunque el protocolo permitió evaluar el funcionamiento general, no se consideraron todas las situaciones que podrían pasar en un entorno real. Por ejemplo, las pruebas se realizaron en un ambiente controlado y no se simularon condiciones climáticas extremas como lluvia intensa o ventiscas 
