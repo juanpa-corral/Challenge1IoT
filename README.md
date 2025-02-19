@@ -32,7 +32,7 @@ Este documento técnico describe el diseño, desarrollo, implementación y valid
 *    Sección 7: Video demostrativo. Se presenta un video explicativo que muestra el funcionamiento del prototipo en acción.
 
 
-## 2.Solución Propuesta
+## 2. Solución Propuesta
 ### Restricciones de diseño identificadas
 El desarrollo del prototipo de sistema de IoT para el monitoreo de crecidas estuvo sujeto a diversas restriscciones de
 diseño las cuales se presentan a continuación:
