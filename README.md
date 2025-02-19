@@ -102,7 +102,7 @@ Para la realización de las pruebas, se utilizaron los siguientes equipos y mate
 *    Termo y envase (Utilizados para simular la lluvia)
 *    Recipiente plástico (Utilizado para simular un río)
 
-Cabe recalcar que para estas pruebas, el estado seguro de río está para más de 8 centímetros de distancia del sensor, el estado de precaución está entre 8 y 4 centímetros de distancia y por el último el estado de peligro es para menos de 4 centímetros.
+Cabe recalcar que para estas pruebas, el estado seguro de río está para 7 o más centímetros de distancia del sensor, el estado de precaución está entre 6 y 5 centímetros de distancia y por el último el estado de peligro es para menos de 5 centímetros.
 
 ### Procedimiento
 1.  Montaje del prototipo: Se conectaron todos los componentes (sensores, Arduino, LED RGB, zumbador) en la protoboard siguiendo el esquemático de hardware.
@@ -112,17 +112,17 @@ Cabe recalcar que para estas pruebas, el estado seguro de río está para más d
 5.  Observación y registro: Se observó el comportamiento del LED RGB y el zumbador a medida que el nivel del agua se elevaba. Al mismo tiempo, la LCD brindó la información correcta. Se regisrtró la distancia medida por el sensor ultrasónico en el que se producian las transiciones entre los estados (seguro, precaución y peligro).
 
 ### Resultados
-| Nivel del Agua (distancia entre sensor y el agua) cm | Color del LED RGB | Zumbador             | Estado en pantalla LCD |
-| :------------------------------------------------- | :--------------- | :------------------- | :-------------------- |
-| 10                                                 | Verde            | No está sonando       | SEGURO                |
-| 9                                                  | Verde            | No está sonando       | SEGURO                |
-| 8                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 7                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 6                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 5                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 4                                                  | Azul             | Sonido Intermitente   | PRECAUCION            |
-| 3                                                  | Rojo             | Sonido Constante      | PELIGRO               |
-| 2                                                  | Rojo             | Sonido Constante      | PELIGRO               |
+| Nivel del Agua (distancia entre sensor y el agua) cm | Color del LED RGB | Zumbador             | Estado en pantalla LCD | Estado de lluvia |
+| :------------------------------------------------- | :--------------- | :------------------- | :-------------------- |:-------------------- |
+| 10                                                 | Verde            | No está sonando       | SEGURO                | SIN LLOVISNA            |
+| 9                                                  | Verde            | No está sonando       | SEGURO                | SIN LLOVISNA            |
+| 8                                                  | Verde            | Sonido Intermitente   | SEGURO                | SIN LLOVISNA            |
+| 7                                                  | Verde            | Sonido Intermitente   | SEGURO                | LLUVIOSO                |
+| 6                                                  | Azul             | Sonido Intermitente   | PRECAUCION            | LLUVIOSO                |
+| 5                                                  | Azul             | Sonido Intermitente   | PRECAUCION            | LLUVIOSO                |
+| 4                                                  | Rojo             | Sonido Constante      | PELIGRO               | LLUVIOSO                |
+| 3                                                  | Rojo             | Sonido Constante      | PELIGRO               | TORMENTA                |
+| 2                                                  | Rojo             | Sonido Constante      | PELIGRO               | TORMENTA                |
 
 ### Análisis
 Los resultados obtenidos demuestran que el prototipo es capaz de dectectar cambios en el nivel del agua debido a las precipitaciones, y alertar al usuario mediante señales visuales (LED RGB) y sonoras (zumbador).
