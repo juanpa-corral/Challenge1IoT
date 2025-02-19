@@ -168,7 +168,7 @@ Este proyecto es un primer paso en la dirección correcta hacia el desarrollo de
 A lo largo del desarrollo del prototipo, se enfrentaron diversos desafíos:
 
 *    Precisión del sensor ultrasónico
-*    Limitaciopnes en el tiempo de desarrollo
+*    Limitaciones en el tiempo de desarrollo
 *    Condiciones controladas
 *    Espacio reducido
 *    Interfaz limita
