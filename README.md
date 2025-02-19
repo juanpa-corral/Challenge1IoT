@@ -114,10 +114,10 @@ Cabe recalcar que para estas pruebas, el estado seguro de río está para 7 o m�
 ### Resultados
 | Nivel del Agua (distancia entre sensor y el agua) cm | Color del LED RGB | Zumbador             | Estado en pantalla LCD | Estado de lluvia |
 | :------------------------------------------------- | :--------------- | :------------------- | :-------------------- |:-------------------- |
-| 10                                                 | Verde            | No está sonando       | SEGURO                | SIN LLOVISNA            |
-| 9                                                  | Verde            | No está sonando       | SEGURO                | SIN LLOVISNA            |
-| 8                                                  | Verde            | Sonido Intermitente   | SEGURO                | SIN LLOVISNA            |
-| 7                                                  | Verde            | Sonido Intermitente   | SEGURO                | LLUVIOSO                |
+| 10                                                 | Verde            | No está sonando       | SEGURO                | SIN LLOVIZNA            |
+| 9                                                  | Verde            | No está sonando       | SEGURO                | SIN LLOVIZNA            |
+| 8                                                  | Verde            | Sonido Intermitente   | SEGURO                | SIN LLOVIZNA            |
+| 7                                                  | Verde            | Sonido Intermitente   | SEGURO                | LLOVIZNA                |
 | 6                                                  | Azul             | Sonido Intermitente   | PRECAUCION            | LLUVIOSO                |
 | 5                                                  | Azul             | Sonido Intermitente   | PRECAUCION            | LLUVIOSO                |
 | 4                                                  | Rojo             | Sonido Constante      | PELIGRO               | LLUVIOSO                |
@@ -132,6 +132,7 @@ Específicamente, se comprobó que:
 *    El sistema identifica de manera correcta un estado de agua seguro (LED verde, zumbador inactivo) (+8cm).
 *    Ante un aumento simulado del nivel del agua, el sistema transiciona a un estado de precaución (LED azul, zumbador intermitente) (entre 8cm y 4cm).
 *    Al alcanzar un estado de peligro, el sistema emite una alerta clara (LED rojo, zumbador continuo) (-4cm).
+*    El sistema detecta el estado de las precipitaciones (SIN LLOVIZNA, LLOVIZNA, LLUVIOSO, TORMENTA).
 
 Es importante recalcar que después de diversas pruebas es recomendable realizar las otras pruebas en condiciones de lluvia reales para validar el comportamiento del sistema. Sin embargo, en estas condiciones simuladas el sistema mostró ser capaz de detectar posibles crecidas de ríos (nivel del agua en el recipiente).
 
