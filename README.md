@@ -75,7 +75,20 @@ Para construir el prototipo, se adoptó un enfoque modular, estructurando el sis
 Este tipo de diseño modular le permite a cada componente cumplir una función específica, mejorando la eficiencia y facilidad de mantenimineto del sistema.
 
 ### Diagrama de UML
-Revisar diagramas en la parte de DiagramsUML.
+#### Diagrama de Flujo
+![Diagrama UML](UMLDiagrams/FlowDiagram.png)
+#### Diagrama de Secuencia
+![Diagrama UML](UMLDiagrams/SecuenceDiagram.png)
+#### Diagrama del Modulo de Alarma
+![Diagrama UML](UMLDiagrams/ModuleAlarmUML.png)
+#### Diagrama del Modulo de Sensores
+![Diagrama UML](UMLDiagrams/SensorModuleUML.png)
+#### Diagrama Interfaz de Usuario
+![Diagrama UML](UMLDiagrams/UserInterfaceUML.png)
+#### Diagrama del Sistema Completo
+![Diagrama UML](UMLDiagrams/UserInterfaceUML.png)
+
+
 
 ### Esquemático de Hardware
 
