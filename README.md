@@ -71,7 +71,28 @@ lo que requirió priorizar funcionalidades y el proceso de diseño y construcci�
 
 ![Diagrama de Bloques de Software](BlockDiagrams/SoftwareBlockDiagram.png)
 
+### Interfaces conexion sensores y actuadores:
 
+* **LCD 16x2:**
+    * RS pin: Arduino pin 2
+    * Enable pin: Arduino pin 3
+    * D4 pin: Arduino pin 7
+    * D5 pin: Arduino pin 8
+    * D6 pin: Arduino pin 9
+    * D7 pin: Arduino pin 10
+* **Sensor ultrasónico (HC-SR04):**
+    * TRIG pin: Arduino pin 13
+    * ECHO pin: Arduino pin 12
+* **LED (Verde):**
+    * Pin del LED: Arduino pin 6
+* **LED (Rojo):**
+    * Pin del LED: Arduino pin 5
+* **LED (Azul):**
+    * Pin del LED: Arduino pin 4
+* **Zumbador:**
+    * Pin del zumbador: Arduino pin 11
+* **Sensor de lluvia (SunFounder):**
+    * Pin analógico: Arduino pin A0
 
 ### Desarrollo teórico modular
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
