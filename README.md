@@ -65,9 +65,11 @@ lo que requirió priorizar funcionalidades y el proceso de diseño y construcci�
 
 #### Diagrama de bloques de Hardware
 
-![Diagrama de Bloques de Hardware](Block diagrams/Challenge1Hardware.drawio.png)
+![Diagrama de Bloques de Hardware](BlockDiagrams/Challenge1Hardware.drawio.png)
 
 #### Diagrama de bloques de Software
+
+![Diagrama de Bloques de Software](BlockDiagrams/SoftwareBlockDiagram.png)
 
 
 
