@@ -62,7 +62,14 @@ limitado, dado que los sensores solo estaban disponibles en horario de clase o h
 lo que requirió priorizar funcionalidades y el proceso de diseño y construcción.
 
 ### Arquitectura propuesta
-Revisar imagenes de diagrama de bloques para hardware y software. Localizado en BlockDiagrams en el repositorio.
+
+#### Diagrama de bloques de Hardware
+
+![Diagrama de Bloques de Hardware](Block diagrams/Challenge1Hardware.drawio.png)
+
+#### Diagrama de bloques de Software
+
+
 
 ### Desarrollo teórico modular
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
@@ -75,24 +82,36 @@ Para construir el prototipo, se adoptó un enfoque modular, estructurando el sis
 Este tipo de diseño modular le permite a cada componente cumplir una función específica, mejorando la eficiencia y facilidad de mantenimineto del sistema.
 
 ### Diagrama de UML
+
 #### Diagrama de Flujo
+
 ![Diagrama UML](UMLDiagrams/FlowDiagram.png)
+
 #### Diagrama de Secuencia
+
 ![Diagrama UML](UMLDiagrams/SecuenceDiagram.png)
+
 #### Diagrama del Modulo de Alarma
+
 ![Diagrama UML](UMLDiagrams/ModuleAlarmUML.png)
+
 #### Diagrama del Modulo de Sensores
+
 ![Diagrama UML](UMLDiagrams/SensorModuleUML.png)
+
 #### Diagrama Interfaz de Usuario
+
 ![Diagrama UML](UMLDiagrams/UserInterfaceUML.png)
+
 #### Diagrama del Sistema Completo
+
 ![Diagrama UML](UMLDiagrams/UMLCompleteSystem.png)
 
 
 
 ### Esquemático de Hardware
 
-Revisar esquemático de Hardware en SchematicHardware en el repositorio.
+![Esquematico de Hardware](/Anexos/SchematicHardware/Schematic.jpg)
 
 ### Estándares de diseño de ingeniería aplicados
 El diseño priorizó la facilidad de uso y la comprensión del sistema, tanto para los usuarios que interactúan con el prototipo como para las personas que reciben las alertas. Se aplicaron principios de diseño centrados en el ser humano para garantizar una visualización de información clara y concisa y alertas perceptibles en diferentes entornos. Por ejemplo, el LED es visible de noche, mientras que el zumbador proporciona una alerta audible durante el día cuando el LED puede no ser fácilmente visible. Se utilizaron principios de modularidad en el diseño del software para mejorar el mantenimiento. Se aplicaron los estándares de (ISO 9241-210) que trata sobre el diseño centrado en el humano, el cual fue tomado en cuenta al momento de realizar la interfaz de usuario, es decir, las alertas visuales y auditivas, y lo que se muestra en la pantalla LCD.
