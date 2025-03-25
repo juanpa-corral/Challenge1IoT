@@ -39,9 +39,7 @@ diseño las cuales se presentan a continuación:
 
 #### Técnicas:
 
-*    Rango del sensor ultrasónico: El sensor HC-SR04 tiene un rango de medición de 2 cm a 400 cm, por lo
-que habia que tener en cuenta hasta que punto debiamos poner la alerta de peligro. En el futuro se podrias explorar
-sensores con mayor alcance para monitorear ríos mas grandes o con variaciones de niveles más sutiles.
+*   Rango del sensor ultrasónico: El sensor HC-SR04 tiene un rango de medición de 2 cm a 400 cm. Debido a las limitaciones del tamaño del recipiente en el que se efectuaron las pruebas, se mapeó el rango de la siguiente forma: Cada centímetro detectado por el sensor representaba un metro en la escala de un río real. Por lo tanto, una distancia medida de 7 cm por el sensor ultrasónico se consideró como el umbral de "Nivel Normal" (equivalente a 7 metros en el río real). Una distancia de 4 cm medida por el sensor se consideró como el umbral de "Posible Crecida" (equivalente a 10 metros en el río real). Distancias menores a 4 cm se consideraron como "Peligro". Esta escala se implementó en el código del Arduino para definir los umbrales de control. El trabajo futuro podría explorar sensores con mayor alcance para monitorear ríos más grandes o con variaciones de niveles más sutiles.
 *    Limitaciones de la pantalla LCD: La pantalla LCD 16x2 solo puede mostrar una cantidad limitada de caracteres y/o símbolos,
 lo que restringe cuanta información al tiempo se pude evidenciar.
 
@@ -69,7 +67,7 @@ Revisar imagenes de diagrama de bloques para hardware y software. Localizado en 
 ### Desarrollo teórico modular
 Para construir el prototipo, se adoptó un enfoque modular, estructurando el sistema en componentes con funciones específicas para facilitar su diseño y funcionamiento.
 
-*    Sensor de lluvia SunFounder: Se eligió un sensor capaz de dectectar la presencia de lluvia con la sensibilidad adecuada para activar el sistema de alerta en caso de ser necesario. El sensor funciona mediante la detección de cambios en la conductividad eléctrica cuando el agua hace contacto con las pistas conductoras.
+*   Sensor de lluvia SunFounder: Se eligió un sensor capaz de detectar la presencia de lluvia con la sensibilidad adecuada para activar el sistema de alerta en caso de ser necesario. El sensor funciona detectando cambios en la conductividad eléctrica cuando el agua entra en contacto con las pistas conductoras. El sensor entrega valores comprendidos entre 0 y 1023, donde 0 indica ausencia de agua, y 1023 es un valor de completa saturación de agua. Estos valores son escalados por medio del Arduino para representar los estados; SIN LLOVIZNA, LLOVIZNA, LLUVIOSO, TORMENTA. Por ejemplo, valores entre 0 y 255 se consideraron "SIN LLOVIZNA", valores entre 256 y 511 se consideraron "LLOVIZNA", valores entre 512 y 767 se consideraron "LLUVIOSO", y valores entre 768 y 1023 se consideraron "TORMENTA".
 *    Sensor ultrasónico: Se utilizó el modelo HC-SR04 debido a su precisión y rango de medición, lo que permite determinar el nivel del agua dentro de un rango relevante.
 *    Alarma(LED RGB y zumbador): Se diseñó una alarma que combina señales visuales (LED RGB) y sonoras (zumbador) para alertar sobre la situación. La luz verde significa seguro, la luz azul más el sonido intermitente significa precaución y por último la luz roja más el sonido continuo representa peligro.
 *    Pantalla LCD 16x2: Se configuró una pantalla LCD 16x2 para mostrar de manera clara y concisa información en tiempo real, incluyendo el nivel agua y el estado del sistema.
@@ -84,7 +82,17 @@ Revisar diagramas en la parte de DiagramsUML.
 Revisar esquemático de Hardware en SchematicHardware en el repositorio.
 
 ### Estándares de diseño de ingeniería aplicados
-Se priorizó la facilidad de uso y comprensión del sistema, tanto para los usuarios que interactuan con el prototipo, como para las personas que reciben las alertas. Se buscó que la informacion mostrada sea clara y concisa, y que las alertas sean perceptibles en diferentes entornos, como por ejemplo, si es de noche es visible el LED, de lo contrario si es de día podría el LED no ser perceptible a la vista por lo tanto se implemento un zumbador como alerta sonora.
+El diseño priorizó la facilidad de uso y la comprensión del sistema, tanto para los usuarios que interactúan con el prototipo como para las personas que reciben las alertas. Se aplicaron principios de diseño centrados en el ser humano para garantizar una visualización de información clara y concisa y alertas perceptibles en diferentes entornos. Por ejemplo, el LED es visible de noche, mientras que el zumbador proporciona una alerta audible durante el día cuando el LED puede no ser fácilmente visible. Se utilizaron principios de modularidad en el diseño del software para mejorar el mantenimiento. Se aplicaron los estándares de (ISO 9241-210) que trata sobre el diseño centrado en el humano, el cual fue tomado en cuenta al momento de realizar la interfaz de usuario, es decir, las alertas visuales y auditivas, y lo que se muestra en la pantalla LCD.
+
+###   Criterios de diseño establecidos
+
+Se establecieron los siguientes criterios de diseño para guiar el desarrollo y la evaluación del prototipo:
+
+*   Precisión en la detección del nivel de agua: El sistema debe medir con precisión la distancia entre el sensor y el nivel del agua.
+*   Fiabilidad en la generación de alertas: El sistema debe generar alertas de forma fiable (visual y audible) cuando el nivel del agua alcanza umbrales predefinidos.
+*   Claridad en la visualización de la información: La pantalla LCD debe mostrar la información de forma clara y concisa, comprensible para los usuarios.
+*   Rentabilidad: El sistema debe diseñarse utilizando componentes fácilmente disponibles y asequibles.
+*   Facilidad de montaje: El sistema debe ser relativamente fácil de montar y mantener.
 
 ## 3.Configuración experimental, resultados y análisis
 ### Descripción del entorno de prueba
