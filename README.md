@@ -86,7 +86,7 @@ Este tipo de diseño modular le permite a cada componente cumplir una función e
 #### Diagrama Interfaz de Usuario
 ![Diagrama UML](UMLDiagrams/UserInterfaceUML.png)
 #### Diagrama del Sistema Completo
-![Diagrama UML](UMLDiagrams/UserInterfaceUML.png)
+![Diagrama UML](UMLDiagrams/UMLCompleteSystem.png)
 
 
 
